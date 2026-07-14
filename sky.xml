@@ -5,21 +5,24 @@
    <remote  name="sky-lineage"
         fetch="https://github.com/sky-lineage" />
 
+  <remote  name="mricet"
+        fetch="https://github.com/mricet" />
+
    <remote  name="LineageOS"
         fetch="https://github.com/LineageOS" />
 
    <!-- Device Trees -->
-   <project path="device/xiaomi/sky" name="android_device_xiaomi_sky" revision="lineage-23.2" remote="sky-lineage" />
+   <project path="device/xiaomi/sky" name="android_device_xiaomi_sky" revision="13.0" remote="mricet" />
 
    <!-- Kernel Source -->
-   <project path="kernel/xiaomi/sky" name="android_kernel_xiaomi_sky" revision="lineage-23.2" remote="sky-lineage" />
+   <project path="kernel/xiaomi/sky" name="android_kernel_xiaomi_sky_base" revision="lineage-20.0" remote="mricet" />
    <project path="kernel/xiaomi/sm8450-modules" name="android_kernel_xiaomi_sm8450-modules" revision="lineage-23.2" remote="sky-lineage" />
 
    <!-- Vendor Blobs -->
-   <project path="vendor/xiaomi/sky" name="android_vendor_xiaomi_sky" revision="lineage-23.2" remote="sky-lineage" />
+   <project path="vendor/xiaomi/sky" name="vendor_xiaomi_sky" revision="lineage-20.0" remote="mricet" />
 
    <!-- Hardware -->
-   <project path="hardware/dolby" name="android_hardware_dolby" revision="lineage-23.2" remote="sky-lineage" />
-   <project path="hardware/xiaomi" name="android_hardware_xiaomi" revision="lineage-23.2" remote="LineageOS" />
+   <!-- <project path="hardware/dolby" name="android_hardware_dolby" revision="lineage-23.2" remote="sky-lineage" /> -->
+   <project path="hardware/xiaomi" name="android_hardware_xiaomi" revision="lineage-20" remote="LineageOS" />
 
 </manifest>
